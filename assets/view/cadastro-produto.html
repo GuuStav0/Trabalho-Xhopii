@@ -36,41 +36,33 @@
 
     <main class="cliente-main">
         <div class="cadastro-cliente-container">
-            <h2 class="cadastro-cliente-title">Cadastrar Cliente</h2>
-            <form id="cadastroClienteForm" class="cadastro-cliente-form">
+            <h2 class="cadastro-cliente-title">Cadastrar Produto</h2>
+            <form id="cadastroProdutoForm" class="cadastro-cliente-form">
                 <div class="cadastro-cliente-group">
                     <input type="text" id="nome" name="nome" class="cadastro-cliente-input" placeholder="Nome" required>
                 </div>
                 
                 <div class="cadastro-cliente-group">
-                    <input type="text" id="sobrenome" name="sobrenome" class="cadastro-cliente-input" placeholder="Sobrenome" required>
+                    <input type="text" id="fabricante" name="fabricante" class="cadastro-cliente-input" placeholder="Fabricante" required>
                 </div>
                 
                 <div class="cadastro-cliente-group">
-                    <input type="text" id="cpf" name="cpf" class="cadastro-cliente-input" placeholder="CPF" required>
+                    <input type="text" id="descricao" name="descricao" class="cadastro-cliente-input" placeholder="Descrição" required>
                 </div>
                 
                 <div class="cadastro-cliente-group">
-                    <input type="date" id="dataNascimento" name="dataNascimento" class="cadastro-cliente-input" placeholder="Data de Nascimento" required>
+                    <input type="text" id="valor" name="valor" class="cadastro-cliente-input" placeholder="Valor" required>
                 </div>
 
                 <div class="cadastro-cliente-group">
-                    <input type="tel" id="telefone" name="telefone" class="cadastro-cliente-input" placeholder="Telefone" required>
-                </div>
-                
-                <div class="cadastro-cliente-group">
-                    <input type="email" id="email" name="email" class="cadastro-cliente-input" placeholder="Email" required>
-                </div>
-
-                <div class="cadastro-cliente-group">
-                    <input type="password" id="senha" name="senha" class="cadastro-cliente-input" placeholder="Senha" required>
+                    <input type="number" id="quantidade" name="quantidade" class="cadastro-cliente-input" placeholder="Quantidade" required>
                 </div>
 
                 <div class="cadastro-cliente-upload">
-                    <label class="cadastro-cliente-label">Selecionar Foto de Perfil:</label>
+                    <label class="cadastro-cliente-label">Selecionar Foto do Produto:</label>
                     <div class="cadastro-cliente-file-upload">
-                        <input type="file" id="fotoPerfil" name="fotoPerfil" accept="image/*">
-                        <label for="fotoPerfil" class="cadastro-cliente-file-btn">
+                        <input type="file" id="fotoProduto" name="fotoProduto" accept="image/*">
+                        <label for="fotoProduto" class="cadastro-cliente-file-btn">
                             <span>Selecionar arquivo</span>
                         </label>
                         <span class="cadastro-cliente-file-name">Nenhum arquivo selecionado</span>

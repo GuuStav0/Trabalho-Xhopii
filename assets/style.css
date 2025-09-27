@@ -92,16 +92,6 @@ body {
     border-top: 1px solid #eee;
 }
 
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.footer-top {
-    padding: 40px 0;
-}
-
 .footer-section {
     margin-bottom: 30px;
 }
@@ -583,6 +573,138 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Estilos específicos para a página de cadastro de cliente */
+.cliente-main {
+    padding: 20px 0;
+    background-color: #eee;
+    min-height: calc(100vh - 120px); /* Ajusta a altura para cobrir a tela, descontando o header e footer */
+}
+
+/* Estilos específicos para o formulário de cadastro de cliente */
+.cadastro-cliente-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-cliente-title {
+    color: #FF4500;
+    text-align: left;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.cadastro-cliente-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cadastro-cliente-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cadastro-cliente-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    display: block;
+    box-sizing: border-box;
+}
+
+.cadastro-cliente-input:focus {
+    border-color: #FF4500;
+    outline: none;
+}
+
+.cadastro-cliente-upload {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cadastro-cliente-upload .cadastro-cliente-label {
+    color: #FF4500;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cadastro-cliente-file-upload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.cadastro-cliente-file-upload input[type="file"] {
+    display: none;
+}
+
+.cadastro-cliente-file-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: white;
+    color: #FF4500;
+    border: 1px solid #FF4500;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 13px;
+    width: auto;
+    min-width: 120px;
+}
+
+.cadastro-cliente-file-btn:hover {
+    background-color: #fff8f5;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-cliente-file-name {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+.cadastro-cliente-submit {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.cadastro-cliente-submit:hover {
+    background-color: #e03e00;
 }
 
 .footer-divider {
