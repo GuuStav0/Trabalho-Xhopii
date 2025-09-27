@@ -7,60 +7,35 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header class="login-header">
-        <div class="container">
-            <div class="logo-container">
-                <div class="logo-wrapper">
-                    <a href="../index.html" class="logo-link">
-                        <img src="../img/logo.png" alt="Xhopii Logo" class="logo">
-                        <span class="logo-text">Xhopii</span>
+    <header class="main-header">
+        <div class="main-container">
+            <div class="main-header-top">
+                <div class="logo">
+                    <a href="../../index.html" class="logo-link">
+                        <img src="../../assets/img/logo.png" alt="Xhopii" class="logo-img">
+                        <span class="main-logo-text">Xhopii</span>
                     </a>
-                    <div class="login-info">
-                        <span>Entrar</span>
-                    </div>
+                </div>
+                <div class="user-menu">
+                    <a href="../../index.html" class="signout-btn">Sair</a>
                 </div>
             </div>
-            <div class="header-actions">
-                <a href="#" class="help-link">Precisa de ajuda?</a>
-            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="./cadastro-cliente.html">Cadastro Cliente</a></li>
+                    <li><a href="./cadastro-funcionario.html">Cadastro Funcionario</a></li>
+                    <li><a href="./cadastro-produto.html">Cadastro Produto</a></li>
+                    <li><a href="./clientes.html">Ver Clientes</a></li>
+                    <li><a href="./funcionarios.html">Ver Funcionarios</a></li>
+                    <li><a href="./produtos.html">Ver Produtos</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="login-main">
-        <div class="login-container">
-            <div class="login-box">
-                <h1 class="login-title">Login</h1>
-                <form class="login-form">
-                    <div class="form-group">
-                        <input type="text" id="email" name="email" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" id="password" name="password" placeholder="Senha">
-                    </div>
-                    <button type="submit" class="login-button">Entre</button>
-                </form>
-                <div class="password-options">
-                    <a href="#" class="forgot-password">Esqueci minha senha.</a>
-                    <a href="#" class="sms-login">Fazer login com SMS</a>
-                </div>
-                <div class="divider">OU</div>
-                <div class="social-login">
-                    <button type="button" class="social-button facebook">
-                        <img src="../img/logo-facebook-cicle.png" alt="Facebook">
-                        Facebook
-                    </button>
-                    <button type="button" class="social-button google">
-                        <img src="../img/logo-google.png" alt="Google">
-                        Google
-                    </button>
-                    <button type="button" class="social-button apple">
-                        <img src="../img/logo-apple.png" alt="Apple">
-                        Apple
-                    </button>
-                </div>
-                <p class="register-text">Ainda não tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
-            </div>
-        </div>
+    <main class="cliente-main">
+
     </main>
 
     <footer class="main-footer">
@@ -165,6 +140,6 @@
         </div>
     </footer>
 
-    <script src="../assets/script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
