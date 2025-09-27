@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Xhopii</title>
+    <title>Camisa Desenvolvedor Front-End CSS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -23,132 +23,86 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="./home.html" class="active">Home</a></li>
+                    <li><a href="./home.html">Home</a></li>
                     <li><a href="./cadastro-cliente.html">Cadastro Cliente</a></li>
-                    <li><a href="./cadastro-funcionario.html">Cadastro Funcionário</a></li>
+                    <li><a href="./cadastro-funcionario.html">Cadastro Funcionario</a></li>
                     <li><a href="./cadastro-produto.html">Cadastro Produto</a></li>
                     <li><a href="./clientes.html">Ver Clientes</a></li>
-                    <li><a href="./funcionarios.html">Ver Funcionários</a></li>
                     <li><a href="./produtos.html">Ver Produtos</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    
-    <main class="produtos-main">
-        <div class="produtos-container produtos-container-home">
-            <!-- Carrossel Bootstrap -->
-            <div id="carouselExampleIndicators" class="carousel slide carousel-fade mb-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/carousel-1.jpg" class="d-block w-100" alt="Ofertas Especiais">
+    <main class="interface-main">
+        <div class="produto-container">
+            <div class="produto-galeria">
+                <div class="miniaturas-galeria">
+                    <div class="miniatura active">
+                        <img src="../img/produto1.png" alt="Camisa - Vista 1">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../img/carousel-2.jpg" class="d-block w-100" alt="Novos Produtos">
+                    <div class="miniatura">
+                        <img src="../img/produto2.png" alt="Camisa - Vista 2">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../img/carousel-3.jpg" class="d-block w-100" alt="Frete Grátis">
+                    <div class="miniatura">
+                        <img src="../img/produto3.png" alt="Camisa - Detalhe" style="object-position: center 30%;">
                     </div>
-                    <div class="carousel-item">
-                        <img src="../img/carousel-4.jpg" class="d-block w-100" alt="Frete Grátis">
+                    <div class="miniatura">
+                        <img src="../img/produto4.png" alt="Camisa - Costas">
+                    </div>
+                    <div class="miniatura">
+                        <img src="../img/produto5.png" alt="Camisa - Costas">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Próximo</span>
-                </button>
+                <div class="produto-imagem-principal">
+                    <img src="../img/produto1.png" alt="Camisa Desenvolvedor Front-End CSS" class="img-fluid" id="imagem-principal">
+                </div>
+                
+                <div id="lightbox" class="lightbox">
+                    <span class="lightbox-close">&times;</span>
+                    <div class="lightbox-content">
+                        <img src="" alt="" id="lightbox-img">
+                    </div>
+                </div>
             </div>
-
-            <div class="promo-banner">
-                <img src="../img/home-promocao.png" alt="Promoção Especial" class="img-fluid">
-            </div>
-
-            <h4 class="section-title">Descobertas do Dia</h4>
-            <div class="produtos-list">
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
+            <div class="produto-info">
+                <h1 class="produto-titulo">Camisa Desenvolvedor Front-End CSS</h1>
+                <div class="produto-preco">
+                    <span class="preco-atual">R$ 59,90</span>
+                    <div class="estoque-disponivel">
+                        <span>171 peças disponíveis</span>
+                    </div>
+                </div>
+                
+                <div class="produto-opcoes">
+                    <div class="opcao-cor">
+                        <h3>Modelos:</h3>
+                        <div class="cores-disponiveis">
+                            <button class="cor-option active">Preto</button>
+                            <button class="cor-option">Azul</button>
+                            <button class="cor-option">Verde</button>
+                            <button class="cor-option">Cinza</button>
+                            <button class="cor-option">Rosa</button>
                         </div>
                     </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
+                    
+                    <div class="opcao-tamanho">
+                        <h3>Tamanho</h3>
+                        <div class="tamanhos-disponiveis">
+                            <button class="tamanho-option">P</button>
+                            <button class="tamanho-option active">M</button>
+                            <button class="tamanho-option">G</button>
+                            <button class="tamanho-option">GG</button>
+                        </div>
+                        <div class="tamanho-selecionado">
+                            <span>Tamanho Selecionado: </span>
+                            <span id="tamanho-selecionado-texto">M</span>
                         </div>
                     </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="interface-produto.html" class="produto-link">
-                    <div class="produto-item">
-                        <img src="../img/produto1.png">
-                        <h4>Camisa Desenvolvedor Front-End CSS</h4>
-                        <div class="preco-quantidade">
-                            <span class="preco">R$ 59,90</span>
-                            <span class="quantidade">171 unidades</span>
-                        </div>
-                    </div>
-                </a>
+                </div>
+                
+                <div class="produto-acoes">
+                    <button class="btn-adicionar-carrinho">Comprar Agora</button>
+                </div>
             </div>
         </div>
     </main>
@@ -253,8 +207,8 @@
             </div>
         </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
