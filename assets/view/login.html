@@ -10,9 +10,15 @@
     <header class="login-header">
         <div class="container">
             <div class="logo-container">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="Xhopii Logo" class="logo">
-                </a>
+                <div class="logo-wrapper">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../img/logo.png" alt="Xhopii Logo" class="logo">
+                        <span class="logo-text">Xhopii</span>
+                    </a>
+                    <div class="login-info">
+                        <span>Entrar</span>
+                    </div>
+                </div>
             </div>
             <div class="header-actions">
                 <a href="#" class="help-link">Precisa de ajuda?</a>
@@ -20,9 +26,144 @@
         </div>
     </header>
 
-    <main>
-        <!-- Conteúdo principal será adicionado nos próximos passos -->
+    <main class="login-main">
+        <div class="login-container">
+            <div class="login-box">
+                <h1 class="login-title">Login</h1>
+                <form class="login-form">
+                    <div class="form-group">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="password" name="password" placeholder="Senha">
+                    </div>
+                    <button type="submit" class="login-button">Entre</button>
+                </form>
+                <div class="password-options">
+                    <a href="#" class="forgot-password">Esqueci minha senha.</a>
+                    <a href="#" class="sms-login">Fazer login com SMS</a>
+                </div>
+                <div class="divider">OU</div>
+                <div class="social-login">
+                    <button type="button" class="social-button facebook">
+                        <img src="../img/logo-facebook-cicle.png" alt="Facebook">
+                        Facebook
+                    </button>
+                    <button type="button" class="social-button google">
+                        <img src="../img/logo-google.png" alt="Google">
+                        Google
+                    </button>
+                    <button type="button" class="social-button apple">
+                        <img src="../img/logo-apple.png" alt="Apple">
+                        Apple
+                    </button>
+                </div>
+                <p class="register-text">Ainda não tem uma conta? <a href="#" class="register-link">Cadastre-se</a></p>
+            </div>
+        </div>
     </main>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- Atendimento ao Cliente -->
+                <div class="footer-section">
+                    <h3>Atendimento ao Cliente</h3>
+                    <ul>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Como Comprar</a></li>
+                        <li><a href="#">Métodos de Pagamento</a></li>
+                        <li><a href="#">Garantia Xhopii</a></li>
+                        <li><a href="#">Devolução e Reembolso</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Ouvidoria</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sobre Xhopii -->
+                <div class="footer-section">
+                    <h3>Sobre Xhopii</h3>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Políticas Xhopii</a></li>
+                        <li><a href="#">Políticas de Privacidade</a></li>
+                        <li><a href="#">Programa de Aliados da Xhopii</a></li>
+                        <li><a href="#">Seja um entregador Xhopii</a></li>
+                        <li><a href="#">Ofertas Relâmpago</a></li>
+                        <li><a href="#">Xhopii Blog</a></li>
+                        <li><a href="#">Empresa</a></li>
+                    </ul>
+                </div>
+
+                <!-- Pagamento -->
+                <div class="footer-section">
+                    <h3>Pagamento</h3>
+                    <div class="payment-methods">
+                        <img src="../img/logo-visa.png" alt="Visa">
+                        <img src="../img/logo-mastercard.png" alt="Mastercard">
+                        <img src="../img/logo-elo.png" alt="Elo">
+                        <img src="../img/logo-hipercard.png" alt="Hipercard">
+                        <img src="../img/logo-american-express.png" alt="American Express">
+                        <img src="../img/logo-boleto.png" alt="Boleto">
+                        <img src="../img/logo-pix.png" alt="Pix">
+                    </div>
+                </div>
+
+                <!-- Siga-nos -->
+                <div class="footer-section">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-item">
+                            <img src="../img/logo-facebook-cicle.png" alt="Facebook">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="../img/logo-instagram.png" alt="Instagram">
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="../img/logo-twitter.png" alt="Twitter">
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="../img/logo-youtube.png" alt="YouTube">
+                            <span>YouTube</span>
+                        </a>
+                        <a href="#" class="social-item">
+                            <img src="../img/logo-linkedln.png" alt="LinkedIn">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Atendimento -->
+                <div class="footer-section atendimento">
+                    <h3>Atendimento ao Cliente</h3>
+                    <div class="atendimento-content">
+                        <div class="qr-code">
+                            <img src="../img/qr-code.png" alt="QR Code">
+                        </div>
+                        <div class="app-stores">
+                            <a href="#" class="app-store">
+                                <img src="../img/logo-google-play.png" alt="Google Play">
+                            </a>
+                            <a href="#" class="app-store">
+                                <img src="../img/logo-store-apple.png" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="copyright">
+                    <p>© 2025 Xhopii. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="../assets/script.js"></script>
 </body>
