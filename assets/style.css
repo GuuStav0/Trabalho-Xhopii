@@ -590,6 +590,128 @@ body {
     padding: 0;
 }
 
+/* Estilos para o carrossel */
+.carousel {
+    margin: 0 auto 30px;
+    width: 90%;
+    max-width: 1000px; /* Largura máxima reduzida */
+    height: 200px; /* Altura um pouco menor */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantém a proporção da imagem */
+    object-position: center;
+    background-color: #f8f9fa; /* Cor de fundo para áreas vazias */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .carousel {
+        width: 95%;
+        height: 180px; /* Altura menor para mobile */
+    }
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 4px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+}
+
+.carousel-caption h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.carousel-caption p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: none;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background: none;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+/* Estilo dos ícones dos controles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+    background-size: 100%, 100%;
+    opacity: 0.8;
+    filter: invert(100%) brightness(0%); /* Torna o ícone preto */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 1;
+    filter: invert(100%) brightness(0%) drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
+
+/* Esconder indicadores */
+.carousel-indicators {
+    display: none;
+}
+
+/* Estilo para o banner promocional */
+.promo-banner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Estilo para o container de produtos */
 .produtos-container {
     width: 90%;
@@ -599,6 +721,18 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin: 0 auto;
+}
+
+/* Título da seção de produtos */
+.produtos-container h1, .produtos-container-home h4 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: #FF4500;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    display: inline-block;
 }
 
 /* Estilo para a lista de produtos */
@@ -622,7 +756,6 @@ body {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -643,12 +776,11 @@ body {
 }
 
 .produto-item h4 {
-    font-size: 16px;
+    font-size: 16px !important;
     color: #333;
-    margin: 12px 15px 5px;
+    padding: 0 15px;
     font-weight: 600;
     text-align: center;
-    padding: 0 10px;
 }
 
 .produto-item p {
@@ -698,16 +830,26 @@ body {
     font-weight: 600;
 }
 
-/* Título da seção de produtos */
-.produtos-container h1 {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-    color: #FF4500;
+/* Estilo para títulos de seção */
+.section-title {
+    color: #FF4500 !important;
     font-size: 24px;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
+    font-weight: 500;
+    margin: 40px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FF4500;
     display: inline-block;
+    width: 100%;
+}
+
+/* Estilo para títulos de produtos */
+.product-title {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    display: block;
 }
 
 /* Estilos específicos para o formulário de cadastro de cliente */
